@@ -29,6 +29,7 @@ main {
     flex-wrap: wrap;
     padding: 0;
     li {
+        font-size: 1em;
         width: 50%;
         margin: 5px 0 5px 0;
     }
@@ -48,10 +49,13 @@ main {
     }
 }
 [class$="left"]{
-    width: 56%;
+    width: 60%;
+    // p {
+    //     font-size: 0.9em;
+    // }
 }
 [class$="right"] {
-    width: 40%
+    width: 36%
 }
 [class^="content"] {
     h2::after {
@@ -69,6 +73,9 @@ main {
     color: #7f8c8d;
     text-align: center;
     font-size: 0.8em;
+}
+h2, h3, h4, h5, p, ul {
+    margin: 0.4em 0 0.4em 0;
 }
 h4 {
     letter-spacing: 0.1em;
@@ -91,4 +98,9 @@ h4 {
 h1 {
     font-size: 3em;
     margin-top: 0;
+}
+.content__education, .content__experience{
+    p, ul {
+        font-size: 0.9em;
+    }
 }
